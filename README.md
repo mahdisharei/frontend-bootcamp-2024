@@ -1,1 +1,1 @@
-# frontend-bootcamp-2024
+# Frontend Bootcamp Exercises
