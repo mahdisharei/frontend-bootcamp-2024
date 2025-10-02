@@ -14,3 +14,9 @@ The focus of this project is layout, typography (Roboto), and building a clean u
   - List of common Spanish phrases  
 - **Footer** with copyright  
 - Integrated **Google Fonts (Roboto)**
+
+## 🛠️ Tech Stack
+
+- HTML5 (semantic structure)  
+- CSS (inline `<style>` block, no frameworks)  
+- Google Fonts: Roboto

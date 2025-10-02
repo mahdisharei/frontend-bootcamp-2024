@@ -1,0 +1,285 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+            }
+            .container {
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .colored {
+                background-image: linear-gradient(to bottom right, #4062BB, #59C3C3);
+            }
+            .colored h1 {
+                font-family: Roboto;
+                font-size: 21px;
+                font-weight: 900;
+                line-height: 24.61px;
+                text-align: left;
+                color: #FFFFFF;
+                padding-top: 40px;
+                margin: 0;
+            }
+            .colored .frame-1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .colored .frame-1 .left {
+                padding: 0 6px 0 6px;
+
+            }
+            .colored .frame-1 .left .text {
+                width: 464px;
+            }
+            .colored .frame-1 .left .text h2 {
+                font-family: Lalezar;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 44px;
+                letter-spacing: 2px;
+                text-align: left;
+                color: #FFFFFF;
+                margin: 0;
+            }
+            .colored .frame-1 .left .text p {
+                font-family: Roboto;
+                font-size: 19px;
+                font-weight: 400;
+                line-height: 28px;
+                letter-spacing: 2px;
+                text-align: left;
+                color: #FFFFFF;
+
+            }
+            .colored .frame-1 .store {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                padding: 0;
+            }
+
+            .colored .frame-1 .right img {
+                margin-bottom: -80px;
+            }
+            .sponsor {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0 0 32px 0;
+            }
+            .sponsor .logo {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+            }
+            .sponsor p {
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 30px;
+                letter-spacing: 2px;
+                text-align: left;
+                color: rgba(0, 0, 0, 0.4);
+            }
+            .sponsor .logo img {
+                padding: 25px;
+            }
+            .features .amazingFeatures h3 {
+                font-family: Lalezar;
+                font-size: 38px;
+                font-weight: 400;
+                line-height: 40px;
+                text-align: center;
+            }
+            .features .amazingFeatures p {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.4);
+                width: 662px;
+                margin: 0 auto 30px auto;
+            }
+            .features .options ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 1000px;
+                margin: 0 auto 40px auto;            
+            }
+            .features .options ul li {
+                text-align: center;
+                width: 315px;
+            }
+            .features .options ul li h4 {
+                font-family: Roboto;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 24px;
+                text-align: center;
+            }
+            .features .options ul li p {
+                font-family: Roboto;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 17.58px;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.4);
+            }
+            .avatar {
+                padding: 65px 0 91px 0;
+                text-align: center;
+            }
+            .avatar h4 {
+                font-family: Roboto;
+                font-size: 19px;
+                font-weight: 700;
+                line-height: 22.27px;
+            }
+            .avatar {
+                background-color: #F2F7F8;
+            }
+            .avatar .blueText {
+                font-family: Roboto;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 19.92px;
+                color: #4062BB;
+            }
+            .avatar .grayText {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18.75px;
+                color: rgba(0, 0, 0, 0.6);
+                width: 500px;
+                margin: 0 auto;
+            }
+            footer {
+                background-color: #4062BB;
+                height: 240px;
+                text-align: center;
+                padding-top: 100px;
+                box-sizing: border-box;
+            }
+            footer p {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18.75px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-bottom: 25px;
+            }
+            footer p span {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 18.75px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+            footer ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            footer img {
+                margin: 0 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="colored">
+                <div class="container">
+                    <h1>Snapdrop</h1>
+                    <div class="frame-1">
+                        <div class="left">
+                            <div class="text">
+                                <h2>Ready to Share your local files with <br> your friends?</h2>
+                                <p>Snapdrop is a local file sharing solution which completely works in your browser. A bit like Apple's Airdrop, but not only for Apple devices. </p>
+                            </div>
+                            <ul class="store">
+                                <li><a href="#" title="null"><img src="./assets/google-play-badge 1.png" alt="google play"></a></li>
+                                <li><a href="#" title="null"><img src="./assets/google-play-badge 2.png" alt="f droid"></a></li>
+                                <li><a href="#" title="null"><img src="./assets/google-play-badge 3.png" alt="f droid"></a></li>
+                            </ul>  
+                        </div>
+                        <div class="right">
+                            <img src="./assets/Group 11.png" alt="mobile app">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sponsor container">
+                <p>As featured in:</p>
+                <ul class="logo">
+                    <li><a href="#" title="null"><img src="./assets/TechCrunch_logo 1.png" alt="logo"></a></li>
+                    <li><a href="#" title="null"><img src="./assets/Vector.png" alt="logo"></a></li>
+                    <li><a href="#" title="null"><img src="./assets/g10.png" alt="logo"></a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section class="container features">
+                <div class="amazingFeatures">
+                    <h3>Amazing Features</h3>
+                    <p>Snapdorp is packed with features and possibilities, making it easy to share everything you have on you phone with your friends and family</p>
+                </div>
+                <div class="options">
+                    <ul>
+                        <li>
+                            <img src="./assets/Vector-2.png" alt="logo">
+                            <h4>Open Source</h4>
+                            <p>App is developed using some of the best security protocols. On top of that, it’s open-source, so developers are continuously improving it.</p>
+                        </li>
+                        <li>
+                            <img src="./assets/Group.png" alt="logo">
+                            <h4>Cross Platform</h4>
+                            <p>Snapdrop works in your browser. A bit like Apple's Airdrop, but not only for Apple devices. Windows, Linux, Android, IPhone, Mac - no problem at all!</p>
+                        </li>
+                        <li>
+                            <img src="./assets/easy 1.png" alt="logo">
+                            <h4>Easy to Use</h4>
+                            <p>Everything is pretty straightforward. As long as you have both devices connected to the same Wi-Fi network, you can access SnapDrop and send your files.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="avatar">
+                <div class="container">
+                    <img src="./assets/tempAvatar 1.png" alt="avatar">
+                    <h4>Niloy Rashed Abir</h4>
+                    <p class="blueText">App Magazin Editor</p>
+                    <p class="grayText">I was tried of switching app to transfer files between my pc and phone but then I found this app. It is actually brilliant, simple and clean. Thank you devs</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2024 SnapDrop. Developed by <span>Mahdi Sharei</span></p>
+            <ul>
+                <li><a href="#" title="null"><img src="./assets/Group-6.png" alt="whatsapp"></a></li>
+                <li><a href="#" title="null"><img src="./assets/Group-5.png" alt="instagram"></a></li>
+                <li><a href="#" title="null"><img src="./assets/Group-3.png" alt="telegram"></a></li>
+                <li><a href="#" title="null"><img src="./assets/Group-4.png" alt="twitter"></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
