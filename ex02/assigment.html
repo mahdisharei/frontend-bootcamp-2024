@@ -1,0 +1,356 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            .container {
+                width: 980px;
+                margin-left: auto;
+                margin-right: auto
+            }
+            header {
+                margin-top: 36px;
+            }
+            header ul {
+                list-style: none;
+                padding: 0;
+                display: inline-block;
+                margin: 0;
+            }
+            header ul li {
+                display: inline-block;
+            }
+            header ul li a {
+                text-decoration: none;
+                color: black;
+                height: 60px;
+                display: block;
+                padding: 16px 12px 16px 12px;
+                box-sizing: border-box;
+            }
+            header ul li a.a-1 {
+                width: 73px;
+            }
+            header ul li a.a-2 {
+                width: 102px;
+            }
+            header ul li a.a-3 {
+                width: 92px;
+            }
+            header ul li a.a-4 {
+                width: 103px;
+            }
+            header ul li a span {
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 400px;
+                font-family: roboto;
+                text-align: center;
+            }
+            header .btn {
+                display: inline-block;
+                margin-left: 456px;
+                width: 138px;
+                height: 45px;
+                padding: 12px 24px;
+                background-color: #D8460B;
+                border-radius: 12px;
+                box-sizing: border-box;
+                color: white;
+                font-size: 18px;
+                line-height: 21.09px;
+                font-weight: 400px;
+                font-family: roboto;
+                text-align: center;
+                text-decoration: none;
+            }
+            .hero-section {
+                background-color: #F2624F;
+                height: 480px;
+                border-radius: 40px;
+                margin-top: 80px;
+                margin-bottom: 80px;
+            }
+            .hero-section ul {
+                display: inline-block;
+                list-style: none;
+                width: 528px;
+                padding: 12px 12px 80px 32px;
+                box-sizing: border-box;                
+            }
+            .hero-section p {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+                color: #FFF;
+            }
+            .hero-section h1 {
+                font-family: Roboto;
+                font-size: 48px;
+                font-weight: 900;
+                line-height: 48px;
+                text-align: left;
+                color: #FFF;
+            }
+            .hero-section .btn {
+                width: 138px;
+                height: 45px;
+                padding: 12px 24px;
+                background-color: #D8460B;
+                border-radius: 12px;
+                box-sizing: border-box;
+                color: white;
+                font-size: 18px;
+                line-height: 21.09px;
+                font-weight: 400px;
+                font-family: roboto;
+                text-align: center;
+                display: inline-block;
+                text-decoration: none;
+            }
+            .hero-section img {
+                vertical-align: bottom;
+                margin-left: 40px;
+            }
+            .travel {
+                height: 361.78px;
+                margin-bottom: 36px;
+            }
+            .travel h2 {
+                font-family: Roboto;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 36px;
+                text-align: left;
+                color: #000;
+            }
+            .travel p {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 23px;
+                text-align: left;
+                color: #929292;          
+            }
+            .travel ul {
+                list-style: none;
+                padding: 0;
+            }
+            .travel ul li {
+                width:233px;
+                height:278.78px;
+                padding: 16px 0px 0px 0px;
+                border-radius: 36px;
+                display: inline-block;
+                background-color: #F6F6F2;
+                margin-right: 9px;
+            }
+            .travel ul li a {
+                display: block;
+                text-decoration: none;
+            }
+            .travel h3 {
+                font-family: Roboto;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28px;
+                text-align: center;
+                color: #000;
+            }
+            .travel ul li p {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: center;
+            }
+            .colored {
+                background-color: #F9F2DB;
+                height: 192px;
+                padding: 56px 0px 56px 0px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 109px;
+            }
+            .colored h2 {
+                font-family: Roboto;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 40px;
+                text-align: left;
+                width: 572px;
+                height: 80px;
+                margin: 56px 0 56px 0;
+                display: inline-block;            
+            }
+            .colored .btn {
+                width: 138px;
+                height: 45px;
+                padding: 12px 24px;
+                background-color: #D8460B;
+                border-radius: 12px;
+                box-sizing: border-box;
+                display: inline-block;
+                margin-left: 266px;
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                line-height: 21.09px;
+                font-weight: 400;
+                font-family: roboto;
+                text-align: center;
+            }
+            .text-1 {
+                margin-top: 72px;
+                margin-bottom: 72px;
+            }
+            .text-1 h2 {
+                font-family: Roboto;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 36px;
+                text-align: left;
+            }
+            .text-1 p {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 23px;
+                text-align: left;
+            }
+            .text-1 p span {
+                color: #D8460B;
+            }
+            .text-2 h2 {
+                font-family: Roboto;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 37.5px;
+                text-align: left;
+                margin: 0;
+            }
+            .text-2 p {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 23px;
+                text-align: left;
+                color: #929292;
+            }
+            .text-2 ul {
+                margin-top: 0;
+                margin-bottom: 72px;
+                padding-left: 30;
+                color: #D8460B;
+            }
+            .text-2 ul li {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 23px;
+                text-align: left;
+            }
+            .text-2 .color {
+                color: #929292;
+            }
+            footer {
+                height: 88px;
+                background-color: #F6F6F2;
+            }
+            footer p {
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                text-align: left;
+                padding-top: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="container">
+            <ul>
+                <li><a class="a-1" href="#" title="null"><span>Home</span></a></li>
+                <li><a class="a-2" href="#" title="null"><span>Countries</span></a></li>
+                <li><a class="a-3" href="#" title="null"><span>Duration</span></a></li>
+                <li><a class="a-4" href="#" title="null"><span>Examples</span></a></li>
+            </ul>
+            <a class="btn" href="#" title="null">Get started</a>
+        </header>
+        <main>
+            <section class="hero-section container">
+                <ul>
+                    <li><h1>Learn Spanish Online from Native Teachers</h1></li>
+                    <li><p>Grow your confidence in Spanish conversation, grammar and reading with live, online classes, professional teachers and a schedule that suits you.</p></li>
+                    <li><a href="#" title="null" class="btn">Get started</a></li>
+                </ul>
+                <img src="./assets/man.png" alt="a photo of a man">
+            </section>
+            <section class="travel container">
+                <h2>Truly Experience Foreign Countries</h2>
+                <p>Travel around the world and meet millions of spanish speaking perople</p>
+                <ul>
+                    <li>
+                        <a href="#" title="null">
+                            <img src="./assets/mexico.png" alt="flag of Mexico">
+                            <h3>Mexcio</h3>
+                            <p>+130 million speakers</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="null">
+                            <img src="./assets/colombia.png" alt="flag of Colombia">
+                            <h3>Colombia</h3>
+                            <p>+50 million speakers </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="null">
+                            <img src="./assets/spain.png" alt="flag of Spain">
+                            <h3>Spain</h3>
+                            <p>+47 million speakers </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="null">
+                            <img src="./assets/argentina.png" alt="flag of Argentina">
+                            <h3>Argentina</h3>
+                            <p>+45 million speakers </p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="colored">   
+                <div class="container">
+                    <h2>Ready to start learning Spanish? Lets try some!</h2>
+                    <a href="#" title="null" class="btn">Get started</a>
+                </div>
+            </section>
+            <section class="text-1 container">
+                <h2>How long does it take to learn Spanish?</h2>
+                <p>People often want to know how to learn Spanish fast or are looking for the easiest way to learn Spanish. The US Foreign Service Institute suggests it takes <span>600-750 hours</span> for an English-speaker to learn Spanish fluently. Remember, how long it takes to learn Spanish really depends on you. Your time commitment, learning plan, materials, and other resources are all important. Students without a learning plan can be confused about what to study and lack awareness of whether they’re improving. A lack of a study plan is often why students reach a basic level of Spanish and then plateau or stop studying altogether. Your materials and resources will also be a big factor. With an effective curriculum of lessons and a native-speaking teacher, your Spanish learning will not only be quicker but more comprehensive. Some people also have the resource of an immersive environment: If you live in a Spanish-speaking country you’re likely to learn faster. Finally, your time commitment will determine how quickly you learn. A student that can learn 8 hours per week will learn much faster than a student who studies just 1 hour per week.</p>
+            </section>
+            <section class="text-2 container">
+                <h2>Common Spanish phrases</h2>
+                <p>There are some common Spanish phrases that can help you go from zero to 60 in your speaking ability.</p>
+                <ul>
+                    <li>How are you? <span class="color">¿Qué tal?</span></li>
+                    <li><span class="color">This can also be used for “how is [something]?” For example, “how was your weekend?” ¿Qué tal tu fin de semana?</span></li>
+                    <li><span class="color">Nice to meet you. Mucho gusto.</span></li>
+                    <li><span class="color">Where are you from? ¿De dónde eres?</span></li>
+                    <li><span class="color">I’m from… Soy de…</span></li>
+                    <li><span class="color">Have a good one! Que le vaya bien.</span></li>
+                    <li><span class="color">You can say this whenever you leave a shop or a restaurant.</span></li>
+                    <li><span class="color">Excuse me. Disculpe.</span></li>
+                    <li><span class="color">This is for calling the attention of someone like a waiter.</span></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p class="container">&copy;	2022 Lingo - All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
