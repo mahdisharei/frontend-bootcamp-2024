@@ -2,12 +2,6 @@
 
 A simple **HTML page** about myself, created as the first exercise of my frontend bootcamp.
 
-## Preview
-
-![screenshot](../screenshots/ex00.png)  
-
-Demo: [GitHub Pages Link](https://mahdisharei.github.io/frontend-bootcamp-exercises/ex00/)  
-
 ## Features
 - Title and heading with my name  
 - Personal introduction paragraph  
