@@ -1,0 +1,572 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            :root {
+                --black: #333;
+                --gray: #F8F8F8;
+                --light-gray: #B8B8B8;
+                --transparent-black: rgba(51, 51, 51, 0.25);
+            }
+            * {
+                margin: 0 0 0 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                position: relative;
+            }
+            .container {
+                width: 800px;
+                margin: 0 auto 0 auto;
+                padding-top: 90px;
+            }
+            ul {
+                list-style: none;
+            }
+            .bg {
+                background-color: var(--gray);
+                position: absolute;
+                width: 49%;
+                height:1366px ;
+                right: 0;
+                top: 0;
+                z-index: -1;
+            }
+            .top-link {
+                display: flex;
+            }
+            .top-link p, 
+            .top-link h4 {
+                margin-right: 12px;
+                font-family: Roboto;
+                font-size: 16px;
+                line-height: 18.75px;
+                text-align: left;
+                color: var(--light-gray);
+            }
+            .top-link p {
+                font-weight: 400;
+            }
+            .top-link h4 {
+                font-weight: 700;
+            }
+            .parent {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 81px;
+            }
+            .col-6 {
+                width: calc(100%/12*6);
+            }
+            .left h3 {
+                font-family: Times New Roman;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 18px;
+                text-align: left;
+                color: var(--black);
+                margin-bottom: 3px;
+            }
+            .left p {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: left;
+                color: var(--light-gray);
+                margin-bottom: 3px;
+            }
+            .left .item-1,
+            .left .item-2 {
+                padding: 6px 0 6px 0;
+            }
+            .left .reference {
+                margin-bottom: 50px;
+                margin-top: 50px;
+            }
+            .left h2 {
+                font-family: Roboto;
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 24.61px;
+                letter-spacing: 4px;
+                text-align: left;
+                margin: 12px 0 12px 0;
+                text-transform: uppercase;
+            }
+            .left .icon {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background-color: var(--gray);
+                padding: 12px;
+                opacity: 80%;
+            }
+            .left ul {
+                display: flex   ;
+            }
+            .left ul li {
+                width: 48px;
+                padding: 6px;
+                margin: 0 8px 0 8px;
+            }
+            .left ul li p {
+                font-family: Roboto;
+                font-size: 9px;
+                font-weight: 400;
+                line-height: 10.55px;
+                letter-spacing: 2px;
+                text-align: center;
+                color: var(--light-gray);
+            }
+            .right {
+                padding-left: 60px;
+            }
+            .right h1:first-of-type {
+                font-family: Roboto;
+                font-size: 64px;
+                font-weight: 100;
+                line-height: 64px;
+                text-align: left;
+                color: var(--black);
+            }
+            .right h1:last-of-type {
+                font-family: Roboto;
+                font-size: 72px;
+                font-weight: 700;
+                line-height: 72px;
+                text-align: left;
+                color: var(--black);
+            }
+            .right .role {
+                width: 138px;
+                height: 29px;
+                background-color: var(--black);
+                margin: 6px 0 12px 0;
+                padding: 4px 16px 4px 16px;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 21.09px;
+                text-align: left;
+                color: var(--gray);
+            }
+            .right .social {
+                display: flex;
+                align-items: center;
+            }
+            .right .social .telegram {
+                display: flex;
+                align-items: center;
+                margin-right: 14px;
+            }
+            .right .social img {
+                margin-right: 6px;
+            }
+            .right .social .telegram p {
+                font-family: Inter;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.52px;
+                text-align: left;
+                color: var(--light-gray);
+            }
+            .right .skill {
+                margin: 50px 0 50px 0;
+                position: relative;
+            }
+            .right .skill .number {
+                width: 40px;
+                height: 25px;
+                background-color: var(--black);
+                border-right: 10px solid var(--gray);
+                border-bottom: 12.7px solid var(--black);
+                border-top: 12.8px solid var(--black);
+                position: absolute;
+                top: 0;
+                left: -60px;
+            }
+            .right .skill .number p {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 14.06px;
+                text-align: left;
+                color: var(--gray);
+                text-align: center;
+                position: absolute;
+                bottom: -8px;
+                left: 8px;
+            }
+            .right .skill h2 {
+                font-family: Roboto;
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 24.61px;
+                letter-spacing: 4px;
+                text-align: left;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+            }
+            .right .skill ul p {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: left;
+                color: var(--black);
+                text-transform: uppercase;
+                width: 112px;
+            }
+            .black-bullet {
+                width: 10px;
+                height: 10px;
+                background-color: var(--black);
+                border-radius: 50%;
+                margin: 0 2px 0 2px;
+            }
+            .gray-bullet {
+                width: 10px;
+                height: 10px;
+                background-color: var(--transparent-black);
+                border-radius: 50%;
+                margin: 0 2px 0 2px;
+            }
+            .right .skill ul li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+            .right .experience {
+                margin: 50px 0 50px 0;
+                position: relative;
+            }
+            .right .experience .number {
+                width: 40px;
+                height: 25px;
+                background-color: var(--black);
+                border-right: 10px solid var(--gray);
+                border-bottom: 12.7px solid var(--black);
+                border-top: 12.8px solid var(--black);
+                position: absolute;
+                top: 0;
+                left: -60px;
+            }
+            .right .experience .number p {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 14.06px;
+                text-align: left;
+                color: var(--gray);
+                text-align: center;
+                position: absolute;
+                bottom: -8px;
+                left: 8px;
+            }
+            .right .experience h2 {
+                font-family: Roboto;
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 24.61px;
+                letter-spacing: 4px;
+                text-align: left;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+            }
+            .right .experience h3 {
+                font-family: Times New Roman;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 18px;
+                text-align: left;
+                color: var(--black);
+                margin-bottom: 3px;
+            }
+            .right .experience h4 {
+                font-family: Times New Roman;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: left;
+                color: var(--light-gray);
+                margin-bottom: 3px;
+            }
+            .right .experience .text p {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: left;
+                color: var(--light-gray);
+                margin-bottom: 12px;
+            }
+            .right .education {
+                position: relative;
+            }
+            .right .education .number {
+                width: 40px;
+                height: 25px;
+                background-color: var(--black);
+                border-right: 10px solid var(--gray);
+                border-bottom: 12.7px solid var(--black);
+                border-top: 12.8px solid var(--black);
+                position: absolute;
+                top: 0;
+                left: -60px;
+            }
+            .right .education .number p {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 14.06px;
+                text-align: left;
+                color: var(--gray);
+                text-align: center;
+                position: absolute;
+                bottom: -8px;
+                left: 8px;
+            }
+            .right .education h2 {
+                font-family: Roboto;
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 24.61px;
+                letter-spacing: 4px;
+                text-align: left;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+            }
+            .right .education h4 {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: left;
+                color: var(--light-gray);
+            }
+            .right .education h3 {
+                font-family: Times New Roman;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 18px;
+                text-align: left;
+                color: var(--black);
+                margin: 3px 0 3px 0;
+            }
+            .right .education p {
+                font-family: Times New Roman;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: left;
+                color: var(--light-gray);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="container">
+            <header class="top-link">
+                <h4>Call</h4>
+                <p>(+39) 389 184 5659</p>
+                <p>or</p>
+                <h4>Email</h4>
+                <p>mahdisharei.95@gmail.com</p>
+            </header>
+            <div class="parent">
+                <div class="left col-6">
+                    <div class="experience">
+                        <img src="./assets/Vector.svg" alt="experiences">
+                        <h2>Certificate</h2>
+                        <div class="item-1">
+                            <p>2024</p>
+                            <h3>CodingFront</h3>
+                            <p>Junior FrontEnd Developer Bootcamp</p>
+                        </div>
+                        <div class="item-2">
+                            <p>2024</p>
+                            <h3>FreeCodeCamp</h3>
+                            <p>Responsive Web Design <br>
+                                Quality Assurance</p>
+                        </div>
+                    </div>
+                    <div class="reference">
+                        <img src="./assets/Group.svg" alt="reference">
+                        <h2>Reference</h2>
+                        <div class="item-1">
+                            <p>Sr. Developer</p>
+                            <h3>Javid Izadfar</h3>
+                            <p>Email: javid.izadfar@gmail.com</p>
+                        </div>
+                        <div class="item-2">
+                            <p>Sr. Developer</p>
+                            <h3>Milad Heydari</h3>
+                            <p>Phone: (+98) 912 345 6789</p>
+                        </div>
+                    </div>
+                    <div class="interests">
+                        <img src="./assets/heart 1.svg" alt="interests">
+                        <h2>interests</h2>
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <img src="./assets/game-controller 1.svg" alt="game contrller">
+                                </div>
+                                <p>Game</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="./assets/camera 1.svg" alt="camera">
+                                </div>
+                                <p>photos</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="./assets/headphone 1.svg" alt="headphone">
+                                </div>
+                                <p>music</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="./assets/crypto 1.svg" alt="wallet">
+                                </div>
+                                <p>crypto</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <img src="./assets/airplane 1.svg" alt="airplane">
+                                </div>
+                                <p>travel</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="./assets/cooking 1.svg" alt="food">
+                                </div>
+                                <p>food</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right col-6">
+                    <h1>Mahdi</h1>
+                    <h1>Sharei</h1>
+                    <div class="role">FrontEnd Dev</div>
+                    <div class="social">
+                        <div class="telegram">
+                            <img src="./assets/telegram 1 (2).svg" alt="telegram">
+                            <p>m.sharei</p>
+                        </div>
+                        <div class="github">
+                            <div class="telegram">
+                                <img src="./assets/Group (2).svg" alt="github">
+                                <p>m.sharei</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="number">
+                            <p>01</p>
+                        </div>
+                        <h2>skills</h2>
+                        <ul>
+                            <li>
+                                <p>html</p>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="gray-bullet"></div>
+                                <div class="gray-bullet"></div>
+                                <div class="gray-bullet"></div>
+                            </li>
+                            <li>
+                                <p>css</p>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="gray-bullet"></div>
+                                <div class="gray-bullet"></div>
+                            </li>
+                            <li>
+                                <p>javascript</p>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="gray-bullet"></div>
+                                <div class="gray-bullet"></div>
+                                <div class="gray-bullet"></div>
+                                <div class="gray-bullet"></div>
+                                <div class="gray-bullet"></div>
+                            </li>
+                            <li>
+                                <p>vue</p>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="gray-bullet"></div>
+                                <div class="gray-bullet"></div>
+                                <div class="gray-bullet"></div>
+                            </li>
+                            <li>
+                                <p>photoshop</p>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="black-bullet"></div>
+                                <div class="gray-bullet"></div>
+                                <div class="gray-bullet"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="experience">
+                        <div class="number">
+                            <p>02</p>
+                        </div>
+                        <h2>experience</h2>
+                        <div class="text">
+                            <h3>BioLink</h3>
+                            <h4>FrontEnd Developer</h4>
+                            <p>BioLink is a static website with a company’s or a person’s all essential links and information on it so that user will put a single link on social media.</p>
+                            <h3>Tacohead</h3>
+                            <h4>FrontEnd Developer</h4>
+                            <p>Tacohead is a static menu website. With the help of Tachohead, user of a service (like resturants, cafes, beauty salons) can see the price before ordering.</p>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <div class="number">
+                            <p>03</p>
+                        </div>
+                        <h2>education</h2>
+                        <h4>2012 - 2018</h4>
+                        <h3>Azad Islamic University, Central Tehran Branch</h3>
+                        <p>Bachelor of Software Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
