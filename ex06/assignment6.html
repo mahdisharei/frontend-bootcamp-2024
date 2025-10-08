@@ -1,0 +1,442 @@
+<html lang="fa" dir="rtl">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <style>
+            :root {
+                --bg-black: #040202;
+                --bg-green: #346E16;
+                --bg-yellow: #F4B10D;
+                --light-black: rgba(0, 0, 0, 0.4);
+                --white: #fff;
+                --black: #000;
+            }
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            a {
+                text-decoration: none;
+                color: var(--black);
+            }
+            ul, ol {
+                list-style: none;
+            }
+            .container-1200 {
+                width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 0 12px 0;
+                margin-bottom: 66px;
+            }
+            header .logo {
+                display: block;
+            }
+            header .logo img {
+                width: 108px;
+                height: 40px;
+            }
+            header .menu ul {
+                display: flex;
+            }
+            header .menu ul li {
+                font-family: Vazirmatn;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 25px;
+                text-align: right;
+                padding-right: 24px;
+            }
+            .hero-section {
+                position: relative;
+                height: 590px;
+            }
+            .hero-section .yellow-circle {
+                width: 500px;   
+                height: 500px;
+                border-radius: 50%;
+                background-color: var(--bg-yellow);
+                position: absolute;
+                top: 71px;
+                right: 344px;
+            }
+            .hero-section .lemon {
+                position: absolute;
+                top: 87px;
+                right: 361px;
+            }
+            .hero-section .lime {
+                position: absolute;
+                top: 186px;
+                right: 594px;
+            }
+            .hero-section h1 {
+                font-family: Lalezar;
+                font-size: 300px;
+                font-weight: 400;
+                line-height: 300px;
+                text-align: left;
+                color: var(--bg-green);
+                position: absolute;
+                display: inline-block;
+            }
+            .hero-section h1:last-of-type {
+                left: 0;
+            }
+            .hero-section .mint {
+                position: absolute;
+                top: 147px;
+                right: 631.44px;
+            }
+            .hero-section .bottle {
+                position: absolute;
+                top: -15px;
+                right: 488px;
+            }
+            .hero-section .lemon2 {
+                position: absolute;
+                top: 219.24px;
+                right: 395.53px;
+            }
+            .hero-section .kiwi {
+                position: absolute;
+                top: 338px;
+                right: 426.86px;
+            }
+            .hero-section ul.right {
+                position: absolute;
+                top: 327px;
+                right: 2px;
+            }
+            .hero-section ul.right .text {
+                margin: 0 0 50px 0;
+                font-family: Vazirmatn;
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 43.75px;
+                text-align: right;
+                color: var(--light-black);
+            }
+            .hero-section ul.right .btn {
+                display: block;
+                width: 204px;
+                padding: 16px 32px 16px 32px;
+                background-color: var(--bg-black);
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .hero-section ul.right .btn p {
+                font-family: Vazirmatn;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: right;
+                color: var(--white);
+            }
+            .hero-section ul.left {
+                position: absolute;
+                left: 0;
+                top: 327px;
+            }
+            .hero-section ul.left li {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 24px;
+            }
+            .hero-section ul.left .icon {
+                display: block;
+                width: 59px;
+                height: 59px;
+                border-radius: 50%; 
+                background-color: var(--bg-black);
+                position: relative;
+                margin-left: 24px;
+            }
+            .hero-section ul.left .icon img {
+                position: absolute;
+                right: 14px;
+                top: 13.5px;
+            }
+            .hero-section ul.left .text {
+                display: block;
+            }
+            .hero-section ul.left h3 {
+                font-family: Vazirmatn;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 26px;
+                text-align: right;
+            }
+            .hero-section ul.left p {
+                font-family: Vazirmatn;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12px;
+                text-align: right;
+                color: var(--light-black);
+            }
+            .flavors {
+                margin-top: 160px;
+                position: relative;
+                height: 711px;
+            }
+            .flavors h2 {
+                font-family: Lalezar;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 75.22px;
+                text-align: center;
+                margin-bottom: 24px;
+            }
+            .flavors .black {
+                width: 100%;
+                height: 537px;
+                border-radius: 90px;
+                background-color: var(--bg-black);
+                margin-top: 79px;
+                position: absolute;
+                z-index: -1;
+            }
+            .flavors ul {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 60px;    
+            }
+            .flavors ul .green-circle {
+                display: block;
+                width: 150px;   
+                height: 150px;
+                border-radius: 50%;
+                background-color: var(--bg-green);
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .flavors ul h4 {
+                font-family: Vazirmatn;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 25px;
+                text-align: center;
+                color: var(--white);
+                margin-top: 12px;
+                margin-bottom: 15px;
+            }
+            .flavors ul p {
+                font-family: Vazirmatn;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21.88px;
+                text-align: center;
+                color: var(--white);
+                opacity: 60%;
+            }
+            .store {
+                margin-top: 160px;
+            }
+            .store h2 {
+                font-family: Lalezar;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 75.22px;
+                text-align: center;
+                color: var(--bg-black);
+            }
+            .store ul {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+                text-align: center;
+            }
+            .store ul:last-of-type {
+                justify-content: space-around;
+            }
+            .store ul h4 {
+                font-family: Vazirmatn;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 28.13px;
+                text-align: right;
+            }
+            footer p {
+                margin: 129px 0 32px 0;
+                font-family: Vazirmatn;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21.88px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="container-1200">
+                <a href="#" title="null" class="logo">
+                    <img src="./assets/Logo 1.png" alt="logo">
+                </a>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#" title="null">خانه</a></li>
+                        <li><a href="#" title="null">طعم‌ها</a></li>
+                        <li><a href="#" title="null">فروشگاه‌ها</a></li>
+                    </ul>
+                </div>
+        </header>
+        <main>
+            <section class="hero-section container-1200">
+                <div class="yellow-circle"></div>
+                <img src="./assets/lemon 1.png" alt="lemon" class="lemon">
+                <img src="./assets/lime 1.png" alt="lime" class="lime">
+                <h1>آیسی </h1>
+                <h1>دانکی</h1>
+                <img src="./assets/mint 1.png" alt="mint" class="mint">
+                <img src="./assets/bottle1 1.png" alt="bottle" class="bottle">
+                <img src="./assets/lemon_wedge 1.png" alt="lemon2" class="lemon2">
+                <img src="./assets/kiwi 1.png" alt="kiwi" class="kiwi">
+                <ul class="right">
+                    <li>
+                        <p class="text">هر روز، آبمیوه تازه</p>
+                    </li>
+                    <li>
+                        <a href="#" title="null" class="btn">
+                            <img src="./assets/Vector.png" alt="shopping bag">
+                            <p>همین الان بخر</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="left">
+                    <li>
+                        <a href="#" title="null" class="icon">
+                            <img src="./assets/Group.png" alt="vitamin icon">
+                        </a>
+                        <a href="#" title="null" class="text">
+                            <h3>ویتامین</h3>
+                            <p>میزان مصرف ویتامین توی<br>
+                                رژیم غذاییت رو افزایش بده</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="null" class="icon">
+                            <img src="./assets/weight 1.png" alt="weight icon">
+                        </a>
+                        <a href="#" title="null" class="text">
+                            <h3>کاهش وزن</h3>
+                            <p>با کم کردن مقدار شکر ورودی <br>وزنت رو کم بکن</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="null" class="icon">
+                            <img src="./assets/strenght 1.png" alt="strenght icon">
+                        </a>
+                        <a href="#" title="null" class="text">
+                            <h3>محافظت</h3>
+                            <p>از الان جلوی پوکی استخوان<br>
+                                در کهن‌سالیت رو بگیر</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="flavors container-1200">
+                <h2>طعم‌های آیسی دانکی</h2>
+                <div class="black"></div>
+                <ul>
+                    <li>
+                        <a href="#" title="null" class="green-circle">
+                            <img src="./assets/lime 2.png" alt="watermelon">
+                        </a>
+                        <h4>هندوانه</h4>
+                        <p>آب هنداونه‌ی تازه، بدون پوست و<br> هسته و شکر افزوده</p>
+                    </li>
+                    <li>
+                        <a href="#" title="null" class="green-circle">
+                            <img src="./assets/lime 2 (1).png" alt="melon">
+                        </a>
+                        <h4>هانی ملون</h4>
+                        <p>آب هانی ملون تازه، بدون پوست و<br> هسته و شکر افزوده</p>
+                    </li>
+                    <li>
+                        <a href="#" title="null" class="green-circle">
+                            <img src="./assets/lime 2 (2).png" alt="lime and honey">
+                        </a>
+                        <h4>لیمو عسل</h4>
+                        <p>ترکیب آب لیمو‌ی سنگی تازه به همراه<br> عسل و آب گاز‌دار</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#" title="null" class="green-circle">
+                            <img src="./assets/lime 2 (3).png" alt="liwi">
+                        </a>
+                        <h4>کیوی</h4>
+                        <p>ترکیب کیوی تازه‌ی پوره‌شده به همراه<br> آب گازدار</p>
+                    </li>
+                    <li>
+                        <a href="#" title="null" class="green-circle">
+                            <img src="./assets/lime 2 (4).png" alt="pomegranate">
+                        </a>
+                        <h4>انار</h4>
+                        <p>آب انار ترش و شیرین، بدون هسته‌ی<br> گس و شکر یا نمک افزوده</p>
+                    </li>
+                    <li>
+                        <a href="#" title="null" class="green-circle">
+                            <img src="./assets/lime 2 (5).png" alt="peach">
+                        </a>
+                        <h4>هلو</h4>
+                        <p>آب هلوی تازه، بدون پوست، پالپ و<br> شکر افزوده</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="store container-1200">
+                <h2>فروشنده‌های آیسی دانکی</h2>
+                <ul>
+                    <li>
+                        <a href="#" title="null">
+                            <img src="./assets/hyperstar 1.png" alt="shahrvand">
+                            <h4>فروشگاه‌های زنجیره‌ای شهروند</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="null">
+                            <img src="./assets/hyperstar 1 (1).png" alt="kourosh">
+                            <h4>فروشگاه‌های زنجیره‌ای افق کوروش</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="null">
+                            <img src="./assets/hyperstar 1 (2).png" alt="hyperstar">
+                            <h4>فروشگاه‌های زنجیره‌ای هایپراستار</h4>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#" title="null">
+                            <img src="./assets/hyperstar 1 (3).png" alt="digikala">
+                            <h4>فروشگاه‌ اینترنتی دیجیکالا</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="null">
+                            <img src="./assets/hyperstar 1 (4).png" alt="snap market">
+                            <h4>فروشگاه‌ اینترنتی اسنپ‌مارکت</h4>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; تمام حقوق محفوظ است</p>
+        </footer>
+    </body>
+</html>
