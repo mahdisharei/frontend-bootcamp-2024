@@ -1,0 +1,380 @@
+<html dir="rtl" lang="fa">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+        <style>
+            @font-face {
+	            font-family: kalameh;
+	            font-style: normal;
+	            font-weight: 10;
+	            src: url('assets/fonts/KalamehWeb_thin.eot');
+	            src: url('assets/fonts/KalamehWeb_thin.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+	            	 url('assets/fonts/KalamehWeb_thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+	            	 url('assets/fonts/KalamehWeb_thin.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            }
+
+            @font-face {
+            	font-family: kalameh;
+            	font-style: normal;
+            	font-weight: normal;
+            	src: url('assets/fonts/KalamehWeb_Regular.eot');
+            	src: url('assets/fonts/KalamehWeb_Regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+            		 url('assets/fonts/KalamehWeb_Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+                     url('assets/fonts/KalamehWeb_Regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            }
+
+            @font-face {
+            	font-family: kalameh;
+            	font-style: normal;
+            	font-weight: 900;
+            	src: url('assets/fonts/KalamehWeb_Bold.eot');
+            	src: url('assets/fonts/KalamehWeb_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+            		 url('assets/fonts/KalamehWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+            		 url('assets/fonts/KalamehWeb_Bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            }
+
+            @font-face {
+            	font-family: kalameh;
+            	font-style: normal;
+            	font-weight: bold;
+            	src: url('assets/fonts/KalamehWeb_Black.eot');
+            	src: url('assets/fonts/KalamehWeb_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+            		 url('assets/fonts/KalamehWeb_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+            		 url('assets/fonts/KalamehWeb_Black.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            }
+            body {
+                margin: 0;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            header {
+                position: relative;
+            }
+            img.front {
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 2;
+            }
+            header h1 {
+                font-family: kalameh;
+                font-size: 120px;
+                font-weight: 900;
+                line-height: 120px;
+                text-align: right;
+                color: #FDFCFA;
+                position: absolute;
+                top: 238px ;
+                right: 120px;
+                margin: 0;
+            }
+            header p {
+                font-family: Kalameh;
+                font-size: 90px;
+                font-weight: normal;
+                line-height: 90px;
+                text-align: right;
+                color: #FDFCFA;
+                position: absolute;
+                top: 376px;
+                right: 120px;
+                z-index: 1;
+                margin: 0;
+            }                
+            .section-1 {
+                margin-right: 120px;
+                margin-top: 120px;
+                /* background-color: aqua; */
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                height: 500px;
+            }
+            .section-1 img {
+                width: auto;
+                height: 500px;
+                border-radius: 24px 24px 0 0;
+                box-shadow: 0 90px 100px -100px rgba(0, 0, 0, 0.7);
+                position: absolute;
+                z-index: 2;
+            }
+            .section-1 .text {
+                /* background-color: aliceblue; */
+                width: 638px;
+                margin: 0 auto;
+                position: absolute;
+                height: 500px;
+                right: 443.25px;
+            }
+            .section-1 .text h2 {
+                font-family: Kalameh;
+                font-size: 80px;
+                font-weight: bold;
+                line-height: 80px;
+                text-align: right;
+                margin: 0;
+                position: absolute;
+            }
+            .section-1 .text h2:first-of-type {
+                top: 100px;
+                right: 0;
+            }
+            .section-1 .text h2:last-of-type {
+                bottom: 100px;
+                left: 0;
+            }
+            .section-1 .text .internalDiv p:first-of-type {
+                font-family: Kalameh;
+                font-size: 90px;
+                font-weight: 400;
+                line-height: 80px;
+                text-align: center;
+                margin: 0;
+            }
+            .section-1 .text .internalDiv {
+                width: 638px;
+                /* background-color: beige; */
+                padding: 210px 0;
+                position: relative;
+            }
+            .section-1 .text .internalDiv p:nth-of-type(2), 
+            .section-1 .text .internalDiv p:nth-of-type(3) {
+                font-family: Vazirmatn;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 31.25px;
+                text-align: justified;
+                position: absolute;
+                margin: 0;
+                width: 347px;
+                color: rgba(0, 0, 0, 0.4);
+            }
+            .section-1 .text p:nth-of-type(2) {
+                left: 0;
+                top: 120px;
+            }
+            .section-1 .text p:nth-of-type(3) {
+                right: 0;
+                bottom: 100px;
+            }
+            .section-2 {
+                margin-right: 120px;
+                display: flex;
+                position: relative;
+                height: 111.25px;
+            }
+            .section-2 div:first-of-type {
+                width: 281.25px;
+                background-color: #ECEBE6;
+                position: absolute;
+                right: 0;
+                height: 111.25px;
+                z-index: 1;
+                border-radius: 0 0 24px 0;
+            }
+            .section-2 div:nth-of-type(2) {
+                background-color: #346671;
+                padding: 40px 50px;
+                display: flex;
+                width: 100%;
+                justify-content: flex-start;                
+                align-items: center;
+                position: absolute;
+                right: 281.25px;
+            }
+            .section-2 p {
+                font-family: Vazirmatn;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 31.25px;
+                text-align: right;
+                text-decoration: underline;
+                color: #FDFCFA;
+                margin: 0;
+            }
+            .section-2 img {
+                margin-right: 40px;
+                width: 35px;
+                height: 18px;
+            }  
+            .section-3 {
+                margin-top: 120px;
+            }
+            .section-3 h2 {
+                margin: 0 120px 0 0;
+                font-family: Kalameh;
+                font-size: 48px;
+                font-weight: bold;
+                line-height: 81.6px;
+                text-align: right;
+            }
+            .section h2 span {
+                line-height: 72px;
+            }
+            .section-3 .btn {
+                width: 158px;
+                height: 46px;
+                padding: 12px 24px 12px 24px;
+                border-radius: 4px;
+                background-color: #A63021;
+                margin: 60px 120px;
+                display: block;
+                font-family: Vazirmatn;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 21.88px;
+                text-align: center;
+                color: #FDFCFA;
+                text-decoration: none;
+                box-sizing: border-box;
+            } 
+            .section-3 .left {
+                width: 600px;
+                background-color: #ECEBE6;
+                border: 1px solid #D0D0D0;
+                padding: 24px 32px 24px 32px;
+                border-radius: 24px;
+                margin-left: 120px;
+            }
+            .section-3 .top .left h4 {
+                font-family: Vazirmatn;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 25px;
+                text-align: right;
+                color: rgba(0, 0, 0, 0.4);
+                margin: 0;
+            }
+            .section-3 .top .left p {
+                font-family: Vazirmatn;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 43.75px;
+                text-align: right;
+                color: rgba(0, 0, 0, 0.4);
+                margin: 0;
+
+            }
+            .section-3 .top .left p span {
+                font-family: Vazirmatn;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18.75px;
+            }
+            .section-3 .top .left p:nth-of-type(2), 
+            .section-3 .top .left p:nth-of-type(3) { 
+                color: #000;
+            }
+             
+            .section-3 .top .left p:nth-of-type(2) span, 
+            .section-3 .top .left p:nth-of-type(2) span {
+                color: #000;
+            }
+            .section-3 img {
+                width: 100%;
+            }
+            .section-3 .top {
+                display: flex;
+                justify-content: space-between;
+            }
+            .section-4 {
+                background-color: #346671;
+                padding: 95px 120px 120px 120px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .section-4 h2 {
+                margin: 0 ;
+                font-family: Kalameh;
+                font-size: 48px;
+                font-weight: bold;
+                line-height: 81.6px;
+                text-align: right;
+            }
+            .section-4 ol {
+                font-family: Vazirmatn;
+                font-size: 33px;
+                font-weight: 500;
+                line-height: 51.56px;
+                text-align: right;
+                color: rgba(208, 208, 208, 0.3);
+                list-style-type: arabic-indic
+
+            }
+            .section-4 ol li span {
+                font-family: Kalameh;
+                font-size: 48px;
+                font-weight: 900;
+                line-height: 81.6px;
+                text-align: right;
+                color: rgba(236, 235, 230, 0.8);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="back" src="./assets/bg-2.png" alt="a photo of tehran">
+            <img class="front" src="./assets/bg.png" alt="a photo of towers in tehran">
+            <h1>تهران</h1>
+            <p>رو دوباره کشف کن!</p>
+        </header>
+        <main>
+            <section class="section-1">
+                <img src="./assets/8beaa7c40d174e76b3c82c4739b2a1a9.jpeg" alt="milad tower">
+                <div class="text">
+                    <div class="internalDiv">
+                        <h2>تهران،</h2>
+                        <p>پایتختی با معماری</p>
+                        <h2>مدرن.</h2>
+                        <p>شهری که قدمتش به بیش از هفت هزار سال پیش باز میگردد، توانسته خود را تبدیل به</p>
+                        <p>متفاوت در منطقه کند و تصویری جدید از ایران به دیگران ارائه دهد. تصویری جذاب و</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-2">
+                <div></div>
+                <div>
+                    <a href="#" title="tehran city"><p>تهران‌گردی خودت رو الان رزرو کن!</p></a>
+                    <img src="./assets/Vector (1).png" alt="arrow">
+                </div>
+            </section>
+            <section class="section-3">
+                <div class="top">
+                    <div class="right">
+                        <h2>آخرین <br><span>گردش‌ها</span></h2>
+                        <a href="#" title="botton" class="btn">دیدن همه گردش‌ها</a>
+                    </div>
+                    <div class="left">
+                        <h4>سری شماره ۱</h4>
+                        <p> ۱۳ آبان ۱۴۰۱ <span>پایان یافته</span></p>
+                        <hr>
+                        <h4>سری شماره ۳</h4>
+                        <p>۲۰ آبان ۱۴۰۱ <span> ۴ جای خالی </span></p>
+                        <hr>
+                        <h4>سری شماره ۳</h4>
+                        <p>۲۷ آبان ۱۴۰۱<span> ۱۲ جای خالی </span></p>
+                    </div> 
+                </div>
+                <img src="./assets/mountains 1.png" alt="mountains">
+            </section>
+            <section class="section-4">
+                <h2>مکان‌هایی<br>
+                که خواهیم دید</h2>
+                <ol>
+                    <li><span>برج میلاد</span><hr></li>
+                    <li><span>برج آزادی</span><hr></li>
+                    <li><span>موزه‌ی هنرهای معاصر</span><hr></li>
+                    <li><span>پل طبیعت</span><hr></li>
+                    <li><span>ساختمان ترمه</span></li>
+                </ol>
+            </section>
+        </main>
+        
+    </body>
+</html>
