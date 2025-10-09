@@ -1,0 +1,279 @@
+:root {
+    --bg: #A7B3C7;
+    --black: #000
+    --black-70: #000000B2;
+    --white-60: #FFFFFF99;
+    --white-50: #FFFFFF80;
+    --white-10: #0000001A;
+    --white-05: #0000000D;
+    --white-20: #00000033;
+    --black-10: #0000001A;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 80px 0;
+    background-color: var(--bg);
+}
+.container{
+    width: 320px;
+    margin: 0 auto;
+}
+.title {
+    margin-bottom: 30px ;
+}
+.title h1 {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.title p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--black-70);
+}
+.row ul li {
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--white-50);
+    background-color: var(--white-60);
+    box-shadow: 0px 10px 10px var(--white-10);
+}
+.row ul li .flag img {
+    border-radius: 10px;
+    border: 1px solid var(--white-50);
+    box-shadow: 0px 10px 30px var(--white-20);
+}
+.like-btn {
+    width: 36px;
+    height: 36px;
+    padding: 7px;
+    border-radius: 36px;
+    border: 1px solid var(--white-50);
+    background-color: var(--white-50);
+}
+.row ul li .info {
+    margin: 10px 0;
+    padding: 10px 0;
+    min-height: 166px;
+}
+.row ul li .info .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.row ul li .info .head h2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+.row ul li .info .body p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: var(--black-70);
+}
+.more-btn {
+    width: 136px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--white-50);
+    background-color: var(--white-50);
+    box-shadow: 0px 10px 10px var(--white-10);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: var(--black);
+}
+.more-btn .learn-more {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+}
+.more-btn .icon {
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+}
+@media screen and (max-width: 480px) {
+    .row ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .title .right {
+        display: none;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container{
+        width: 720px;
+        margin: 0 auto;
+    }
+    .row ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .row ul li {
+        width: 220px;
+    }
+    .row ul li .flag img {
+        width: 180px;
+        height: 150px;
+    }
+    .title .right {
+        display: none;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .container{
+        width: 1140px;
+        margin: 0 auto;
+    }
+    .row ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .row ul li {
+        width: 262.5px;
+    }
+    .row ul li .flag img {
+        width: 222.5px;
+        height: 150px;
+    }
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 152px;
+    }
+    .title .right {
+        width: 177px;
+        height: 44px;
+        border-radius: 30px;
+        border: 1px solid var(--white-50);
+        padding: 4px;
+        box-shadow: 0px 10px 10px var(--black-10);
+        background-color: var(--white-60);
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .title .right .filter {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        padding: 4px 12px;
+    }
+    .title .right .region {
+        width: 107px;
+        height: 36px;
+        border-radius: 30px;    
+        border: 1px solid var(--white-50);
+        padding: 8px 16px;
+        background-color: var(--white-50);
+        display: flex;
+        justify-content: space-between;
+    }
+    .title .right .region .text {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+    }
+    .title .right .region .icon {
+        width: 20px;
+        height: 20px;
+        padding-left: 3px;
+    }
+}
+@media screen and (min-width: 1201px) {
+    .container{
+        width:1320px;
+        margin: 0 auto;
+    }
+    .row ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .row ul li {
+        width: 307.5px;
+    }
+    .row ul li .flag img {
+        width: 267.5px;
+        height: 150px;
+    }
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 332px;
+    }
+    .title .right {
+        width: 177px;
+        height: 44px;
+        border-radius: 30px;
+        border: 1px solid var(--white-50);
+        padding: 4px;
+        box-shadow: 0px 10px 10px var(--black-10);
+        background-color: var(--white-60);
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .title .right .filter {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        padding: 4px 12px;
+    }
+    .title .right .region {
+        width: 107px;
+        height: 36px;
+        border-radius: 30px;    
+        border: 1px solid var(--white-50);
+        padding: 8px 16px;
+        background-color: var(--white-50);
+        display: flex;
+        justify-content: space-between;
+    }
+    .title .right .region .text {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+    }
+    .title .right .region .icon {
+        width: 20px;
+        height: 20px;
+        padding-left: 3px;
+    }
+}
