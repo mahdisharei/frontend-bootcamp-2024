@@ -1,0 +1,105 @@
+:root {
+    --light-gray: #444444;
+    --dark-gray: #313131;
+    --white: #FFFFFF;
+    --red: #CA3E47;
+    --red-80: rgba(202, 62, 71, 0.8);
+    --red-60: rgba(202, 62, 71, 0.6);
+    --shadow-1: #CA3E474D;
+    --shadow-2: #00000033;
+    --btn-hover: rgba(0, 0, 0, 0.1);
+    --btn-active: rgba(0, 0, 0, 0.3);
+
+}
+body {
+    background-image: linear-gradient(to bottom right, var(--light-gray), var(--dark-gray));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc {
+    min-width: 330px;   
+    max-width: 330px;
+    min-height: 480px;
+}
+#display {
+    width: 70%;
+    height: auto;
+    min-height: 91px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: Roboto Mono;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 55.39px;
+    text-align: left;
+    color: var(--white);
+    overflow-x: scroll;
+}
+.pad {
+    display: flex;
+    justify-content: space-around;
+}
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px var(--white) solid;
+}
+.actions {
+    display: flex;
+    flex-direction: column;
+    border-radius: 100px;
+    background-image: linear-gradient(var(--dark-gray), transparent);
+    justify-content: flex-end;
+    min-height: 392px;
+    margin-top: -62px;
+}
+button {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+}
+button:hover {
+    background-color: var(--btn-hover);
+    border-radius: 100px;
+}
+button:active {
+    background-color: var(--btn-active);
+    border-radius: 100px;
+}
+.numbers button {
+    font-family: Roboto Mono;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32.97px;
+    text-align: center;
+    color: var(--white);
+}
+.actions button {
+    font-family: Roboto Mono;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 42.2px;
+    text-align: center;
+    color: var(--white);
+}
+.equal {
+    background-color: var(--red);
+    border-radius: 100px;
+    box-shadow: 0px 0px 17px 0px var(--shadow-1), 
+                0px 4px 4px 0px var(--shadow-2);
+}
+.equal:hover {
+    background-color: var(--red-80);
+    border-radius: 100px;
+}
+.equal:active {
+    background-color: var(--red-60);
+    border-radius: 100px;
+}
+
