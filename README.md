@@ -1,3 +1,11 @@
+![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5)
+![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?logo=vue.js)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite)
+![Status](https://img.shields.io/badge/Progress-Completed-success)
+
+
 # 🎨 Frontend Bootcamp Exercises
 
 A collection of all projects and exercises completed during my **Frontend Development Bootcamp**.  
