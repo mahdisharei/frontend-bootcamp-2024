@@ -81,16 +81,6 @@ A polished e-commerce landing page featuring:
 
 ---
 
-## 💡 Next Steps
-
-- Add interactivity (wishlist persistence, countdown logic)
-- Connect to a mock backend (products via JSON / API)
-- Refactor projects into Vue components
-- Improve accessibility & SEO
-- Create a full-stack portfolio integrating these projects
-
----
-
 ## 👤 Author
 
 **Mahdi Sharei**  
